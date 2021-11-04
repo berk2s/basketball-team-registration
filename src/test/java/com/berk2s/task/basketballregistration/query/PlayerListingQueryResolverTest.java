@@ -1,11 +1,8 @@
 package com.berk2s.task.basketballregistration.query;
 
-
-import com.berk2s.task.basketballregistration.BasketballRegistrationApplication;
 import com.berk2s.task.basketballregistration.domain.Player;
 import com.berk2s.task.basketballregistration.domain.PlayerPosition;
 import com.berk2s.task.basketballregistration.repository.PlayerRepository;
-import com.berk2s.task.basketballregistration.web.models.PlayerDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.graphql.spring.boot.test.GraphQLResponse;
 import com.graphql.spring.boot.test.GraphQLTestTemplate;
@@ -24,7 +21,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.map;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class PlayerListingQueryResolverTest {

@@ -1,0 +1,12 @@
+mutation {
+    createPlayer(createPlayer: {
+        firstName: "Berk",
+        lastName: "Topcu",
+        position: CENTER
+    }) {
+        id,
+        firstName,
+        lastName,
+        position
+    }
+}
