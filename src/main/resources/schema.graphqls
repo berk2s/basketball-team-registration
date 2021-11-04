@@ -1,10 +1,10 @@
 type Mutation {
-    createPlayer(createPlayer: CreatePlayer!): Player
-    deletePlayer(id: ID): Boolean
+    createPlayer(createPlayer: CreatePlayer!): Player!
+    deletePlayer(id: ID): Boolean!
 }
 
 type Query {
-    getPlayers(): [Player]
+    getPlayers: [Player!]!
 }
 
 input CreatePlayer {
