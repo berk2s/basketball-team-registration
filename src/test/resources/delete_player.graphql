@@ -1,0 +1,3 @@
+mutation {
+    deletePlayer: deletePlayer(id: 1)
+}
